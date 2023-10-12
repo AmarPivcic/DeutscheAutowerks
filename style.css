@@ -1,0 +1,20 @@
+.navbar{
+    background-color: rgb(25, 25, 25) !important; 
+}
+
+.aboutus{
+    background-color: rgb(25, 25, 25) !important;
+}
+
+.card{
+    background-color: rgb(25, 25, 25) !important;
+}
+
+.btn{
+    background-color: rgb(175, 175, 175);
+    color: black;
+}
+
+.btn:hover{
+    color: black;
+}
