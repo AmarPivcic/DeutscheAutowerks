@@ -18,3 +18,107 @@
 .btn:hover{
     color: black;
 }
+
+.location{
+    display: flex;
+    flex-direction:column ;
+    justify-content: center;
+    align-items: center;
+}
+
+.locationmap{
+    border-radius: 20px;
+    width: 80%;
+}
+
+.form{
+    width: 80%;
+    margin-left: 10%;
+    background-color: rgb(25, 25, 25);
+    border-radius: 20px;
+    padding-bottom: 25px;
+}
+
+.formrow{
+    width: 95%;
+    margin-left: 2.5%;
+}
+
+.formperson{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+}
+
+.person{
+    width: 24%;
+}
+
+.formcar{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+}
+
+.carinfo{
+    width: 32%;
+}
+
+.moreinfo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 95%;
+    margin-left: 2.5%;
+}
+
+.btnsubmit{
+    width: 100px;
+    margin-top: 30px;
+}
+
+.footer{
+    margin-top: 50px;
+}
+
+.footer2{
+    background-color: rgb(25, 25, 25) !important;
+    padding-top: 20px;
+}
+
+.footer3{
+    margin: 0 !important;
+}
+
+.footer4{
+    margin: 0 !important;
+}
+
+@media (max-width:576px)
+{
+    .formperson{
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .person{
+        width: 95%;
+        margin-top: 10px;
+    }
+    
+    .formcar{
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .carinfo{
+        width: 95%;
+        margin-top: 10px;
+    }
+    
+    .moreinfo{
+        width: 90%;
+        align-items: center;
+        margin-left: 5%;
+    }
+}
