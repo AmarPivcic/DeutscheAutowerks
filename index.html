@@ -229,7 +229,7 @@
                         <p class="card-text text-light">From €128.280</p>
                       <div class="d-flex justify-content-between align-items-center">
                         <div class="btn-group">
-                          <button type="button" id="p911" class="btn btn-secondary" onclick="load(id)">Select configuration</button>
+                          <button type="button" id="porsche911" class="btn btn-secondary" onclick="load(id)">Select configuration</button>
                         </div>
                          
                       </div>
@@ -244,7 +244,7 @@
                         <p class="card-text text-light">From €98.880</p>
                       <div class="d-flex justify-content-between align-items-center">
                         <div class="btn-group">
-                          <button type="button" id="p718" class="btn btn-secondary" onclick="load(id)">Select configuration</button>
+                          <button type="button" id="porsche718" class="btn btn-secondary" onclick="load(id)">Select configuration</button>
                         </div>
                          
                       </div>
@@ -284,45 +284,45 @@
           <div class="formrow">
             <div class="formperson">
               <div class="form-outline form-white person">
-                <input type="text" id="typeText" class="form-control" />
-                <label class="form-label text-light" for="typeText">First name</label>
+                <input type="text" id="firstName" class="form-control" />
+                <label class="form-label text-light" for="firstName">First name</label>
               </div>
               <div class="form-outline form-white person">
-                <input type="text" id="typeText" class="form-control" />
-                <label class="form-label text-light" for="typeText">Last name</label>
+                <input type="text" id="lastName" class="form-control" />
+                <label class="form-label text-light" for="lastName">Last name</label>
               </div>
               <div class="form-outline form-white person">
-                <input type="email" id="typeEmail" class="form-control"/>
-                <label class="form-label text-light" for="typeEmail">Email</label>
+                <input type="email" id="eMail" class="form-control"/>
+                <label class="form-label text-light" for="eMail">Email</label>
               </div>
               <div class="form-outline form-white person">
-                <input type="tel" id="typePhone" class="form-control" />
-                <label class="form-label text-light" for="typePhone">Phone number</label>
+                <input type="tel" id="phoneNumber" class="form-control" />
+                <label class="form-label text-light" for="phoneNumber">Phone number</label>
               </div>
             </div>
           </div>
           <div class="formrow">
             <div class="formcar">
               <div class="form-outline form-white carinfo">
-                <input type="text" id="typeText" class="form-control" />
-                <label class="form-label text-light" for="typeText">Manufacturer</label>
+                <input type="text" id="manufacturer" class="form-control" />
+                <label class="form-label text-light" for="manufacturer">Manufacturer</label>
               </div>
               <div class="form-outline form-white carinfo">
-                <input type="text" id="typeText" class="form-control" />
-                <label class="form-label text-light" for="typeText">Model</label>
+                <input type="text" id="model" class="form-control" />
+                <label class="form-label text-light" for="model">Model</label>
               </div>
               <div class="form-outline form-white carinfo">
-                <input type="number" id="typeText" class="form-control" />
-                <label class="form-label text-light" for="typeText">Model year</label>
+                <input type="number" id="modelYear" class="form-control" />
+                <label class="form-label text-light" for="modelYear">Model year</label>
               </div>
             </div>
-          </div>
+          </div>    
           <div class="moreinfo">
             <div class="form-outline form-white" style="margin-top: 30px;">
-              <textarea class="form-control" id="textAreaExample" rows="4"></textarea>
-              <label class="form-label text-light" for="textAreaExample">Additional message</label>
+              <textarea class="form-control" id="additionalMessage" rows="4"></textarea>
+              <label class="form-label text-light" for="additionalMessage">Your message</label>
             </div>
-            <button type="button" class="btn btn-success btnsubmit">Submit</button>
+            <a class="btnsubmit" onclick="submit()">Submit</a>
           </div>
         </form>
       </section>
