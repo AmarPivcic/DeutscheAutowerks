@@ -9,7 +9,7 @@ function validateEmail(email) {
 
 function sendMail(manufacturer, model, modelYear, additionalMessage) {
   var link = "mailto:amarpivcic@gmail.com"
-           + "&subject=" + encodeURIComponent("Custom order of: "+modelYear+" "+manufacturer+" "+model)
+           + "?subject=" + encodeURIComponent("Custom order of: "+modelYear+" "+manufacturer+" "+model)
            + "&body=" + encodeURIComponent(additionalMessage);
   window.location.href = link;
 }
