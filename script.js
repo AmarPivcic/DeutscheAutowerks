@@ -10,9 +10,10 @@ function validateEmail(email) {
 function sendMail(manufacturer, model, modelYear, additionalMessage,fName,lName,phoneNumber,eMail) {
   var link = "mailto:amarpivcic@gmail.com"
            + "?subject=" + encodeURIComponent("Custom order of: "+modelYear+" "+manufacturer+" "+model)
-           + "&body=Name: "+fName +" "+lName+"Phone number and mail: "+phoneNumber+" "+eMail+"Additional message: " + encodeURIComponent(additionalMessage);
+           + "&body=Name: "+fName +" "+lName+" Phone number and mail: "+phoneNumber+" "+eMail+" Additional message: " + encodeURIComponent(additionalMessage);
   window.location.href = link;
 }
+
 
 function submit()
 {
