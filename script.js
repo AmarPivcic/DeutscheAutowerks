@@ -7,10 +7,10 @@ function validateEmail(email) {
   return re.test(email);
 }
 
-function sendMail(manufacturer, model, modelYear, additionalMessage) {
+function sendMail(manufacturer, model, modelYear, additionalMessage,fName,lName,phoneNumber,eMail) {
   var link = "mailto:amarpivcic@gmail.com"
            + "?subject=" + encodeURIComponent("Custom order of: "+modelYear+" "+manufacturer+" "+model)
-           + "&body=" + encodeURIComponent(additionalMessage);
+           + "&body=Name: "+fName +" "+lName+"Phone number and mail: "+phoneNumber+" "+eMail+"Additional message: " + encodeURIComponent(additionalMessage);
   window.location.href = link;
 }
 
@@ -37,7 +37,7 @@ function submit()
   }
 
   else{
-    sendMail(manufacturer.value, model.value, modelYear.value, additionalMessage.value);
+    sendMail(manufacturer.value, model.value, modelYear.value, additionalMessage.value, fName,lName,phoneNumber,eMail);
     fName.value='';
     lName.value='';
     eMail.value='';
