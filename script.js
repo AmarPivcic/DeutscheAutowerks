@@ -36,8 +36,8 @@ function submit()
     window.alert("Manufacturer, model and model year are required!"); 
   }
 
-  else{
-    sendMail(manufacturer.value, model.value, modelYear.value, additionalMessage.value, fName,lName,phoneNumber,eMail);
+   else{
+    sendMail(manufacturer.value, model.value, modelYear.value, additionalMessage.value, fName.value ,lName.value ,phoneNumber.value ,eMail.value);
     fName.value='';
     lName.value='';
     eMail.value='';
