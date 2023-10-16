@@ -54,7 +54,6 @@ function selectCar(carid)
   var carinfo = document.getElementById("carInfo");
   var model = document.getElementById(carid+"model").innerHTML;
   carinfo.value=model;
-  window.scrollTo(0, 1000); 
 }
 
 function appoint()
