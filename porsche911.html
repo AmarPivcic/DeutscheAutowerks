@@ -53,7 +53,7 @@
               <div class="card bg-dark shadow-sm">
                 <img src="./images/porsche/911.jpg" class="bd-placeholder-img card-img-top" width="100%" height="225" style="object-fit: cover;">
                 <div class="card-body">
-                  <h4 class="card-text text-light">Porsche 911 Carrera S</h4>
+                  <h4 class="card-text text-light" id="carrerasmodel">Porsche 911 Carrera S</h4>
                   <p class="card-text text-light">Price €128.280</p>
                   <ul class="text-light">
                     <li>Engine: 3.0 TwinTurbo F6</li>
@@ -62,7 +62,7 @@
                   </ul>
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
-                      <button type="button" class="btn btn-secondary">Appoint test drive</button>
+                      <button type="button" class="btn btn-secondary" id="carreras" onclick="selectCar(id)">Appoint test drive</button>
                     </div>                    
                   </div>
                 </div>
@@ -72,7 +72,7 @@
               <div class="card bg-dark shadow-sm">
                 <img src="./images/porsche/911TurboS.png" class="bd-placeholder-img card-img-top" width="100%" height="225" style="object-fit: cover;"> 
                 <div class="card-body">
-                    <h4 class="card-text text-light">Porsche 911 Turbo S</h4>
+                    <h4 class="card-text text-light" id="turbosmodel">Porsche 911 Turbo S</h4>
                     <p class="card-text text-light">Price €206.105</p> 
                     <ul class="text-light">
                     <li>Engine: 3.7 TwinTurbo F6</li>
@@ -81,7 +81,7 @@
                   </ul>
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
-                      <button type="button" class="btn btn-secondary">Appoint test drive</button>
+                      <button type="button" class="btn btn-secondary" id="turbos" onclick="selectCar(id)">Appoint test drive</button>
                     </div>                   
                   </div>
                 </div>
@@ -91,7 +91,7 @@
               <div class="card bg-dark shadow-sm">
                 <img src="./images/porsche/911GT3RS.png" class="bd-placeholder-img card-img-top" width="100%" height="225" style="object-fit: cover;"> 
                 <div class="card-body">
-                    <h4 class="card-text text-light">Porsche 911 GT3 RS</h4>
+                    <h4 class="card-text text-light" id="gt3rsmodel">Porsche 911 GT3 RS</h4>
                     <p class="card-text text-light">Price €224.765</p> 
                     <ul class="text-light">
                     <li>Engine: 4.0 NA F6</li>
@@ -100,7 +100,7 @@
                   </ul>
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
-                      <button type="button" class="btn btn-secondary">Appoint test drive</button>
+                      <button type="button" class="btn btn-secondary" id="gt3rs" onclick="selectCar(id)">Appoint test drive</button>
                     </div>                   
                   </div>
                 </div>
@@ -111,6 +111,42 @@
       </div>
       </section>
         
+      <form class="form">
+        <div class="formrow">
+          <div class="formperson">
+            <div class="form-outline form-white person">
+              <input type="text" id="firstName" class="form-control" />
+              <label class="form-label text-light" for="firstName">First name</label>
+            </div>
+            <div class="form-outline form-white person">
+              <input type="text" id="lastName" class="form-control" />
+              <label class="form-label text-light" for="lastName">Last name</label>
+            </div>
+            <div class="form-outline form-white person">
+              <input type="email" id="eMail" class="form-control"/>
+              <label class="form-label text-light" for="eMail">Email</label>
+            </div>
+            <div class="form-outline form-white person">
+              <input type="tel" id="phoneNumber" class="form-control" />
+              <label class="form-label text-light" for="phoneNumber">Phone number</label>
+            </div>
+          </div>
+        </div>
+        <div class="formrow">
+          <div class="formcar">
+            <div class="form-outline form-white carinfo2">
+              <input type="text" id="carInfo" class="form-control" readonly/>
+            </div>
+            <div class="form-outline form-white carinfo">
+              <input type="date" min="2023-10-01T00:00" max="2044-12-31T00:00" id="date" class="form-control">
+              <label class="form-label text-light" for="date">Date of test drive</label>
+            </div>
+          </div>
+        </div>    
+        <div class="moreinfo">
+          <a class="btnsubmit" onclick="appoint()">Appoint!</a>
+        </div>
+      </form>
       
 
       <!-- Footer -->

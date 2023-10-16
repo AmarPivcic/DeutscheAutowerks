@@ -52,7 +52,7 @@
               <div class="card bg-dark shadow-sm">
                 <img src="./images/audi/A6Limo.jpg" class="bd-placeholder-img card-img-top" width="100%" height="225" style="object-fit: cover;">
                 <div class="card-body">
-                  <h4 class="card-text text-light">Audi A6 Sedan 55 TFSI quattro</h4>
+                  <h4 class="card-text text-light" id="a6sedanmodel">Audi A6 Sedan 55 TFSI quattro</h4>
                   <p class="card-text text-light">Price €56.280</p>
                   <ul class="text-light">
                     <li>Engine: 3.0 TFSI V6</li>
@@ -61,7 +61,7 @@
                   </ul>
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
-                      <button type="button" class="btn btn-secondary">Appoint test drive</button>
+                      <button type="button" class="btn btn-secondary" id="a6sedan" onclick="selectCar(id)">Appoint test drive</button>
                     </div>
                      
                   </div>
@@ -72,7 +72,7 @@
               <div class="card bg-dark shadow-sm">
                 <img src="./images/audi/A6Avant.jpg" class="bd-placeholder-img card-img-top" width="100%" height="225" style="object-fit: cover;"> 
                 <div class="card-body">
-                    <h4 class="card-text text-light">Audi A6 Avant 50 TDI quattro</h4>
+                    <h4 class="card-text text-light" id="a6avantmodel">Audi A6 Avant 50 TDI quattro</h4>
                     <p class="card-text text-light">Price €65.955</p> 
                     <ul class="text-light">
                     <li>Engine: 3.0 TDI V6</li>
@@ -81,7 +81,7 @@
                   </ul>
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
-                      <button type="button" class="btn btn-secondary">Appoint test drive</button>
+                      <button type="button" class="btn btn-secondary" id="a6avant" onclick="selectCar(id)">Appoint test drive</button>
                     </div>
                      
                   </div>
@@ -92,7 +92,7 @@
               <div class="card bg-dark shadow-sm">
                 <img src="./images/audi/A6Allroad.jpg" class="bd-placeholder-img card-img-top" width="100%" height="225" style="object-fit: cover;">                
                 <div class="card-body">
-                    <h4 class="card-text text-light">Audi A6 Allroad 55 TDI quattro</h4>
+                    <h4 class="card-text text-light" id="a6allroadmodel">Audi A6 Allroad 55 TDI quattro</h4>
                     <p class="card-text text-light">Price €86.280</p>
                     <ul class="text-light">
                     <li>Engine: 3.0 TDI V6</li>
@@ -101,7 +101,7 @@
                   </ul>
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
-                      <button type="button" class="btn btn-secondary">Appoint test drive</button>
+                      <button type="button" class="btn btn-secondary" id="a6allroad" onclick="selectCar(id)">Appoint test drive</button>
                     </div>
                      
                   </div>
@@ -113,7 +113,7 @@
               <div class="card bg-dark shadow-sm">
                 <img src="./images/audi/RS6Performance.jpg" class="bd-placeholder-img card-img-top" width="100%" height="225" style="object-fit: cover;"> 
                       <div class="card-body">
-                    <h4 class="card-text text-light">Audi RS6 Performance</h4>
+                    <h4 class="card-text text-light" id="rs6model">Audi RS6 Performance</h4>
                     <p class="card-text text-light">price €126.295</p>
                     <ul class="text-light">
                     <li>Engine: 4.0 TwinTurbo V8</li>
@@ -122,9 +122,8 @@
                   </ul>
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
-                      <button type="button" class="btn btn-secondary">Appoint test drive</button>
-                    </div>
-                     
+                      <button type="button" class="btn btn-secondary" id="rs6" onclick="selectCar(id)">Appoint test drive</button>
+                    </div>    
                   </div>
                 </div>
               </div>
@@ -133,6 +132,43 @@
         </div>
       </div>
       </section>
+
+      <form class="form">
+        <div class="formrow">
+          <div class="formperson">
+            <div class="form-outline form-white person">
+              <input type="text" id="firstName" class="form-control" />
+              <label class="form-label text-light" for="firstName">First name</label>
+            </div>
+            <div class="form-outline form-white person">
+              <input type="text" id="lastName" class="form-control" />
+              <label class="form-label text-light" for="lastName">Last name</label>
+            </div>
+            <div class="form-outline form-white person">
+              <input type="email" id="eMail" class="form-control"/>
+              <label class="form-label text-light" for="eMail">Email</label>
+            </div>
+            <div class="form-outline form-white person">
+              <input type="tel" id="phoneNumber" class="form-control" />
+              <label class="form-label text-light" for="phoneNumber">Phone number</label>
+            </div>
+          </div>
+        </div>
+        <div class="formrow">
+          <div class="formcar">
+            <div class="form-outline form-white carinfo2">
+              <input type="text" id="carInfo" class="form-control" readonly/>
+            </div>
+            <div class="form-outline form-white carinfo">
+              <input type="date" min="2023-10-01T00:00" max="2044-12-31T00:00" id="date" class="form-control">
+              <label class="form-label text-light" for="date">Date of test drive</label>
+            </div>
+          </div>
+        </div>    
+        <div class="moreinfo">
+          <a class="btnsubmit" onclick="appoint()">Appoint!</a>
+        </div>
+      </form>
         
       
 
