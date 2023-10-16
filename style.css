@@ -64,6 +64,10 @@
     width: 32%;
 }
 
+.carinfo2{
+    width: 65%;
+}
+
 .moreinfo{
     display: flex;
     flex-direction: column;
@@ -103,6 +107,7 @@
     margin: 0 !important;
 }
 
+
 @media (max-width:576px)
 {
     .formperson{
@@ -123,6 +128,10 @@
     .carinfo{
         width: 95%;
         margin-top: 10px;
+    }
+
+    .carinfo2{
+        width: 95%;
     }
     
     .moreinfo{
