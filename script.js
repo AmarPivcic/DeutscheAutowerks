@@ -58,6 +58,13 @@ function selectCar(carid)
   firstName.scrollIntoView();
 }
 
+function closepopup() {
+  var blur = document.getElementById("blur");
+  var body = document.getElementById("body");
+  blur.classList.add("hidden");
+  body.classList.remove("stop-scrolling");
+}
+
 function appoint()
 {
   var firstName=document.getElementById("firstName");
@@ -66,6 +73,8 @@ function appoint()
   var phoneNumber=document.getElementById("phoneNumber");
   var carinfo = document.getElementById("carInfo");
   var date = document.getElementById("date");
+  var blur = document.getElementById("blur");
+  var body = document.getElementById("body");
 
   if (carinfo.value=="")
   {
@@ -96,7 +105,8 @@ function appoint()
     phoneNumber.value='';
     carinfo.value='';
     date.value='';
-    window.alert("Reservation succesful! We will reach back to you soon!");
+    blur.classList.remove("hidden");
+    body.classList.add("stop-scrolling");
     window.scrollTo(0, 0);
   }
 }
