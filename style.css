@@ -1,3 +1,63 @@
+.blur{
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(10px);
+    z-index: 1;
+}
+
+.checkmark{
+    color: green;
+    height: 45px;
+    width: 45px;
+    margin-bottom: 25px;
+}
+
+.popup{
+    height: 250px;
+    width: 300px;
+    background-color: black;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.popuptext{
+    color: white;
+    text-align: center;
+    width: 80%;
+}
+
+.btnok{
+    color: white;
+    background-color: green;
+    padding: 7px;
+    border-radius: 5px;
+    width: 60px;
+    height: fit-content;
+    text-align: center;
+    margin-top: 25px;
+}
+
+.btnok:hover{
+    color: white;
+    cursor: pointer;
+}
+
+.hidden{
+    display: none;
+}
+
+.stop-scrolling {
+    height: 100%;
+    overflow: hidden;
+  }
+
 .navbar{
     background-color: rgb(25, 25, 25) !important; 
 }
@@ -138,5 +198,9 @@
         width: 90%;
         align-items: center;
         margin-left: 5%;
+    }
+
+    .p-5{
+        padding: 1rem !important;
     }
 }
