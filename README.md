@@ -9,6 +9,14 @@ This project is a website created for imaginary car dealership called Deutsche A
 - Interactive window with Google Maps location (The location is not real).
 - Custom order  form that you can fill out with required info to make a custom order of a car that is not currently available in the invertory.
 - Appoint test drive button on car configuration page that automatically fills some fields in the form bellow, you need to manually fill out the rest of it and then by clicking the  Appoint button, your test drive gets appointed.
+
+## Technologies used
+
+- HTML
+- CSS
+- JavaScript
+- Bootstrap (MDBoodstrap in particular - https://mdbootstrap.com)
+
 ## Viewing the project
 
 To view the website live and explore its features, please visit this link: https://amarpivcic.github.io/DeutscheAutowerks
